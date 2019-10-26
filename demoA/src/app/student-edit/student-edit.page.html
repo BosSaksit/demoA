@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>studentEdit</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding text-center>
+  <form [formGroup]="getDataById" (ngSubmit)="editdataStudent()">  
+    <ion-item>
+      <ion-label>รหัสนักเรียน :</ion-label>
+      <ion-input formControlName="studentId" readonly></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>ชื่อนักเรียน :</ion-label>
+      <ion-input formControlName="studentName"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button type="submit">แก้ไขข้อมูล</ion-button>
+  </form>
+</ion-content>
